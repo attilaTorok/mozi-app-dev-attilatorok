@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" fill="#09090b"/>
+  <rect x="64" y="136" width="384" height="240" rx="12" fill="#18181b" stroke="#f59e0b" stroke-width="8"/>
+  <line x1="170" y1="136" x2="170" y2="376" stroke="#f59e0b" stroke-width="6" stroke-dasharray="14 10"/>
+  <text x="310" y="272" font-family="monospace" font-size="64" font-weight="700" fill="#fbbf24" text-anchor="middle">KUPON</text>
+  <text x="310" y="330" font-family="monospace" font-size="40" fill="#f59e0b" text-anchor="middle">MOZI</text>
+</svg>
+

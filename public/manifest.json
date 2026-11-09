@@ -1,0 +1,13 @@
+{
+  "name": "Kupon Mozi",
+  "short_name": "Kupon Mozi",
+  "description": "Közös film- és sorozatlista kettőnknek",
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#09090b",
+  "background_color": "#09090b",
+  "icons": [
+    { "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
+

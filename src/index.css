@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@theme {
+  --font-mono: 'Space Mono', ui-monospace, monospace;
+  --font-sans: 'Inter', 'Space Mono', system-ui, sans-serif;
+}
+
+html, body, #root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: #09090b;
+  color: #e4e4e7;
+  font-family: 'Inter', system-ui, sans-serif;
+  background-image: radial-gradient(circle at 50% -10%, rgba(245, 158, 11, 0.12), transparent 50%);
+  background-attachment: fixed;
+}
+
+/* Perforation notches on ticket cards */
+.ticket-notch::before,
+.ticket-notch::after {
+  content: '';
+  position: absolute;
+  left: calc(var(--stub-w, 6.5rem) - 6px);
+  width: 12px;
+  height: 12px;
+  border-radius: 9999px;
+  background: #09090b;
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  z-index: 1;
+}
+.ticket-notch::before { top: -7px; }
+.ticket-notch::after { bottom: -7px; }
+
+.scanlines::after {
+  content: '';
+  pointer-events: none;
+  position: fixed;
+  inset: 0;
+  background: repeating-linear-gradient(0deg, rgba(0,0,0,0.12) 0, rgba(0,0,0,0.12) 1px, transparent 1px, transparent 3px);
+  z-index: 100;
+}
+
